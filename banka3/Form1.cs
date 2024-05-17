@@ -17,9 +17,10 @@ namespace banka3
         {
             InitializeComponent();
         }
-        SqlConnection con = new SqlConnection("server=DESKTOP-BVGAO0O ; initial catalog=Mobilbankacılık; integrated security = sspi");
+        SqlConnection con = new SqlConnection("server=DESKTOP-BVGAO0O; initial catalog=Mobilbankacılık; integrated security=sspi;");
         public static string adSoyad = "";
-        public static int mID;
+        public static int mID=0;
+        public static float mBakiye = 0.0f;
         private void Form1_Load(object sender, EventArgs e)
         {
             radioButton2.Checked = true;
@@ -50,7 +51,8 @@ namespace banka3
                 while (dr.Read())
                 {
                     adSoyad = dr["adSoyad"].ToString();
-                    mID =int.Parse( dr["ID"].ToString() ); 
+                    mID =int.Parse( dr["ID"].ToString());
+                    mBakiye = float.Parse(dr["bakiye"].ToString());
                     sonuc= true;
                 } 
               con.Close();
@@ -67,7 +69,8 @@ namespace banka3
 
 
             }
-           
+            textBox1.Text = "";
+            textBox2.Text = "";
               
             
             

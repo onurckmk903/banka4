@@ -16,5 +16,18 @@ namespace banka3
         {
             InitializeComponent();
         }
+
+        private void btnCikis_Click(object sender, EventArgs e)
+        {
+            Form1 frm = new Form1();
+            frm.Show();
+            this.Close();
+        }
+
+        private void Müsteriislem_Load(object sender, EventArgs e)
+        {
+            lblAdSoyad.Text=Form1.adSoyad;
+            lblHesapNo.Text=Form1.mID.ToString();
+        }
     }
 }

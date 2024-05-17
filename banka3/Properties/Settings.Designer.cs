@@ -26,11 +26,31 @@ namespace banka3.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-BVGAO0O;Initial Catalog=Mobilbankacılık;Integrated Security=T" +
-            "rue;TrustServerCertificate=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\localDB1;Integrated Security=True;Encrypt=True")]
+        public string ConnectionString {
+            get {
+                return ((string)(this["ConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\localDB1; Integrated Security=True;Encrypt=True;Initial Cat" +
+            "alog=banka;Int; TrustServerCertificate=True")]
         public string MobilbankacılıkConnectionString {
             get {
                 return ((string)(this["MobilbankacılıkConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\localDB1;Initial Catalog=banka;Integrated Security=True")]
+        public string bankaConnectionString {
+            get {
+                return ((string)(this["bankaConnectionString"]));
             }
         }
     }

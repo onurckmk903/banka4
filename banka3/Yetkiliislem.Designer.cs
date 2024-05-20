@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnEkle = new System.Windows.Forms.Button();
-            this.btnAra = new System.Windows.Forms.Button();
-            this.btnGuncelle = new System.Windows.Forms.Button();
-            this.btnSil = new System.Windows.Forms.Button();
-            this.btnListele = new System.Windows.Forms.Button();
             this.btnCikis = new System.Windows.Forms.Button();
+            this.btnListele = new System.Windows.Forms.Button();
+            this.btnSil = new System.Windows.Forms.Button();
+            this.btnGuncelle = new System.Windows.Forms.Button();
+            this.btnAra = new System.Windows.Forms.Button();
+            this.btnEkle = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -54,49 +54,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Yetkili";
             // 
-            // btnEkle
+            // btnCikis
             // 
-            this.btnEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnEkle.ForeColor = System.Drawing.Color.Black;
-            this.btnEkle.Location = new System.Drawing.Point(56, 74);
-            this.btnEkle.Name = "btnEkle";
-            this.btnEkle.Size = new System.Drawing.Size(274, 52);
-            this.btnEkle.TabIndex = 0;
-            this.btnEkle.Text = "Müşteri Ekle";
-            this.btnEkle.UseVisualStyleBackColor = true;
-            // 
-            // btnAra
-            // 
-            this.btnAra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnAra.ForeColor = System.Drawing.Color.Black;
-            this.btnAra.Location = new System.Drawing.Point(56, 149);
-            this.btnAra.Name = "btnAra";
-            this.btnAra.Size = new System.Drawing.Size(274, 52);
-            this.btnAra.TabIndex = 1;
-            this.btnAra.Text = "Müşteri Ara";
-            this.btnAra.UseVisualStyleBackColor = true;
-            // 
-            // btnGuncelle
-            // 
-            this.btnGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGuncelle.ForeColor = System.Drawing.Color.Black;
-            this.btnGuncelle.Location = new System.Drawing.Point(56, 224);
-            this.btnGuncelle.Name = "btnGuncelle";
-            this.btnGuncelle.Size = new System.Drawing.Size(274, 52);
-            this.btnGuncelle.TabIndex = 2;
-            this.btnGuncelle.Text = "Müşteri Güncelle";
-            this.btnGuncelle.UseVisualStyleBackColor = true;
-            // 
-            // btnSil
-            // 
-            this.btnSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSil.ForeColor = System.Drawing.Color.Black;
-            this.btnSil.Location = new System.Drawing.Point(56, 299);
-            this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(274, 52);
-            this.btnSil.TabIndex = 3;
-            this.btnSil.Text = "Müşteri Sil";
-            this.btnSil.UseVisualStyleBackColor = true;
+            this.btnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCikis.ForeColor = System.Drawing.Color.OrangeRed;
+            this.btnCikis.Location = new System.Drawing.Point(56, 449);
+            this.btnCikis.Name = "btnCikis";
+            this.btnCikis.Size = new System.Drawing.Size(274, 52);
+            this.btnCikis.TabIndex = 5;
+            this.btnCikis.Text = "Çıkış";
+            this.btnCikis.UseVisualStyleBackColor = true;
             // 
             // btnListele
             // 
@@ -109,16 +76,50 @@
             this.btnListele.Text = "Müşteri Listele";
             this.btnListele.UseVisualStyleBackColor = true;
             // 
-            // btnCikis
+            // btnSil
             // 
-            this.btnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnCikis.ForeColor = System.Drawing.Color.OrangeRed;
-            this.btnCikis.Location = new System.Drawing.Point(56, 449);
-            this.btnCikis.Name = "btnCikis";
-            this.btnCikis.Size = new System.Drawing.Size(274, 52);
-            this.btnCikis.TabIndex = 5;
-            this.btnCikis.Text = "Çıkış";
-            this.btnCikis.UseVisualStyleBackColor = true;
+            this.btnSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSil.ForeColor = System.Drawing.Color.Black;
+            this.btnSil.Location = new System.Drawing.Point(56, 299);
+            this.btnSil.Name = "btnSil";
+            this.btnSil.Size = new System.Drawing.Size(274, 52);
+            this.btnSil.TabIndex = 3;
+            this.btnSil.Text = "Müşteri Sil";
+            this.btnSil.UseVisualStyleBackColor = true;
+            // 
+            // btnGuncelle
+            // 
+            this.btnGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnGuncelle.ForeColor = System.Drawing.Color.Black;
+            this.btnGuncelle.Location = new System.Drawing.Point(56, 224);
+            this.btnGuncelle.Name = "btnGuncelle";
+            this.btnGuncelle.Size = new System.Drawing.Size(274, 52);
+            this.btnGuncelle.TabIndex = 2;
+            this.btnGuncelle.Text = "Müşteri Güncelle";
+            this.btnGuncelle.UseVisualStyleBackColor = true;
+            // 
+            // btnAra
+            // 
+            this.btnAra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAra.ForeColor = System.Drawing.Color.Black;
+            this.btnAra.Location = new System.Drawing.Point(56, 149);
+            this.btnAra.Name = "btnAra";
+            this.btnAra.Size = new System.Drawing.Size(274, 52);
+            this.btnAra.TabIndex = 1;
+            this.btnAra.Text = "Müşteri Ara";
+            this.btnAra.UseVisualStyleBackColor = true;
+            // 
+            // btnEkle
+            // 
+            this.btnEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnEkle.ForeColor = System.Drawing.Color.Black;
+            this.btnEkle.Location = new System.Drawing.Point(56, 74);
+            this.btnEkle.Name = "btnEkle";
+            this.btnEkle.Size = new System.Drawing.Size(274, 52);
+            this.btnEkle.TabIndex = 0;
+            this.btnEkle.Text = "Müşteri Ekle";
+            this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // label1
             // 

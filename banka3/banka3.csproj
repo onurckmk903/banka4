@@ -67,6 +67,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MobilbankacılıkDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="MusteriAra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriAra.Designer.cs">
+      <DependentUpon>MusteriAra.cs</DependentUpon>
+    </Compile>
     <Compile Include="MusteriEkle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriAra.resx">
+      <DependentUpon>MusteriAra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MusteriEkle.resx">
       <DependentUpon>MusteriEkle.cs</DependentUpon>

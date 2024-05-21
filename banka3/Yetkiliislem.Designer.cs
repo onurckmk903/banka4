@@ -108,6 +108,7 @@
             this.btnAra.TabIndex = 1;
             this.btnAra.Text = "Müşteri Ara";
             this.btnAra.UseVisualStyleBackColor = true;
+            this.btnAra.Click += new System.EventHandler(this.btnAra_Click);
             // 
             // btnEkle
             // 

@@ -29,5 +29,11 @@ namespace banka3
             MusteriEkle me = new MusteriEkle();
             me.Show();
         }
+
+        private void btnAra_Click(object sender, EventArgs e)
+        {
+            MusteriAra ma = new MusteriAra();
+            ma.Show();
+        }
     }
 }

@@ -41,5 +41,11 @@ namespace banka3
             MusteriGuncelle mg = new MusteriGuncelle();
             mg.Show();
         }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            MusteriSil ms = new MusteriSil();   
+            ms.Show();
+        }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -11,9 +12,9 @@ using System.Data.SqlClient;
 
 namespace banka3
 {
-    public partial class MusteriAra : Form
+    public partial class MusteriGuncelle : Form
     {
-        public MusteriAra()
+        public MusteriGuncelle()
         {
             InitializeComponent();
         }
@@ -34,7 +35,7 @@ namespace banka3
                 txtTel.Text = dr["telefon"].ToString();
                 txtBakiye.Text = dr["bakiye"].ToString();
             }
-                     
+
             else
             {
                 MessageBox.Show(txtID.Text + "Numaralı Kayıt Bulunamadı !", "Kayıt Arama", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -47,82 +48,36 @@ namespace banka3
 
             }
             con.Close();
-           
         }
 
-        private void txtBakiye_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
+            SqlCommand komut = new SqlCommand("update musteriler set adSoyad=@p1 , adres=@p2 , telefon=@p3  where ID= @p4 or tcNo=@p5", con);
+            komut.Parameters.AddWithValue("@p4", txtAra.Text);
+            komut.Parameters.AddWithValue("@p5", txtAra.Text);
+            komut.Parameters.AddWithValue("@p1", txtAdSoyad.Text);
+            komut.Parameters.AddWithValue("@p2", txtAdres.Text);
+            komut.Parameters.AddWithValue("@p3", txtTel.Text);
 
-        }
+            con.Open();
+            int sonuc= komut.ExecuteNonQuery();
+            if (sonuc==1)
+            {
+                MessageBox.Show("Güncelleme Yapıldı ", "Güncelleme İşlemi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
-        private void txtTel_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
+            else
+            {
+                MessageBox.Show( "Güncelleme Yapılamadı !", "Güncelleme İşlemi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtID.Text = "";
+                txtTcNo.Text = "";
+                txtAdres.Text = "";
+                txtAdSoyad.Text = "";
+                txtBakiye.Text = "";
+                txtTel.Text = "";
 
-        }
-
-        private void txtAdres_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtAdSoyad_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtTcNo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtID_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtAra_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
+            }
+            con.Close();
         }
     }
 }

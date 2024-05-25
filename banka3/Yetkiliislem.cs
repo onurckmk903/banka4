@@ -16,14 +16,7 @@ namespace banka3
         {
             InitializeComponent();
         }
-
-        private void btnCikis_Click(object sender, EventArgs e)
-        {
-            Form1 frm = new Form1();
-            frm.Show();
-            this.Close();
-        }
-
+      
         private void btnEkle_Click(object sender, EventArgs e)
         {
             MusteriEkle me = new MusteriEkle();
@@ -46,6 +39,19 @@ namespace banka3
         {
             MusteriSil ms = new MusteriSil();   
             ms.Show();
+        }
+
+        private void btnListele_Click(object sender, EventArgs e)
+        {
+            MusteriListele ml = new MusteriListele();
+            ml.Show();
+        }
+
+        private void btnCikis_Click_1(object sender, EventArgs e)
+        {
+            Form1 frm = new Form1();
+            frm.Show();
+            this.Hide();
         }
     }
 }

@@ -64,6 +64,7 @@
             this.btnCikis.TabIndex = 5;
             this.btnCikis.Text = "Çıkış";
             this.btnCikis.UseVisualStyleBackColor = true;
+            this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click_1);
             // 
             // btnListele
             // 
@@ -75,6 +76,7 @@
             this.btnListele.TabIndex = 4;
             this.btnListele.Text = "Müşteri Listele";
             this.btnListele.UseVisualStyleBackColor = true;
+            this.btnListele.Click += new System.EventHandler(this.btnListele_Click);
             // 
             // btnSil
             // 

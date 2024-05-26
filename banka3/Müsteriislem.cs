@@ -29,5 +29,17 @@ namespace banka3
             lblAdSoyad.Text=Form1.adSoyad;
             lblHesapNo.Text=Form1.mID.ToString();
         }
+
+        private void btnParaCek_Click(object sender, EventArgs e)
+        {
+            ParaCek pc = new ParaCek();
+            pc.Show();
+        }
+
+        private void btnParaYatir_Click(object sender, EventArgs e)
+        {
+            ParaYatir py = new ParaYatir();
+            py.Show();
+        }
     }
 }

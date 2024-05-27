@@ -39,6 +39,7 @@ namespace banka3
                 if (sonuc == 1)
                 {
                     MessageBox.Show("Para yatırma İşlemi Yapıldı ", "Para Yatırma  İşlemi", MessageBoxButtons.OK);
+                    Form1.mBakiye += sayi;
                 }
 
                 else

@@ -103,6 +103,7 @@
             this.btnHavale.TabIndex = 3;
             this.btnHavale.Text = "Havale / EFT";
             this.btnHavale.UseVisualStyleBackColor = true;
+            this.btnHavale.Click += new System.EventHandler(this.btnHavale_Click);
             // 
             // btnBakiyeGoruntule
             // 
@@ -114,6 +115,7 @@
             this.btnBakiyeGoruntule.TabIndex = 2;
             this.btnBakiyeGoruntule.Text = "Bakiye Görüntüle";
             this.btnBakiyeGoruntule.UseVisualStyleBackColor = true;
+            this.btnBakiyeGoruntule.Click += new System.EventHandler(this.btnBakiyeGoruntule_Click);
             // 
             // btnParaYatir
             // 

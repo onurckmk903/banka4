@@ -69,6 +69,7 @@
             this.btnHesapH.TabIndex = 6;
             this.btnHesapH.Text = "Hesap Hareketleri";
             this.btnHesapH.UseVisualStyleBackColor = true;
+            this.btnHesapH.Click += new System.EventHandler(this.btnHesapH_Click);
             // 
             // btnCikis
             // 
@@ -92,6 +93,7 @@
             this.btnSifre.TabIndex = 4;
             this.btnSifre.Text = "Şifre Değiştir";
             this.btnSifre.UseVisualStyleBackColor = true;
+            this.btnSifre.Click += new System.EventHandler(this.btnSifre_Click);
             // 
             // btnHavale
             // 

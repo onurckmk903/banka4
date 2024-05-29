@@ -40,6 +40,7 @@ namespace banka3
                 {
                     MessageBox.Show("Para yatırma İşlemi Yapıldı ", "Para Yatırma  İşlemi", MessageBoxButtons.OK);
                     Form1.mBakiye += sayi;
+                    Hareketkaydet.kaydet(Form1.mID,(sayi + " TL Para Yatırıldı "));
                 }
 
                 else

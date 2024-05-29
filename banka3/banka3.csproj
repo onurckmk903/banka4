@@ -68,11 +68,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Hareketkaydet.cs" />
     <Compile Include="Havale.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Havale.Designer.cs">
       <DependentUpon>Havale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HesapHareket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HesapHareket.Designer.cs">
+      <DependentUpon>HesapHareket.cs</DependentUpon>
     </Compile>
     <Compile Include="MobilbankacılıkDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -129,6 +136,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SifreDegistirme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifreDegistirme.Designer.cs">
+      <DependentUpon>SifreDegistirme.cs</DependentUpon>
+    </Compile>
     <Compile Include="Yetkiliislem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Havale.resx">
       <DependentUpon>Havale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HesapHareket.resx">
+      <DependentUpon>HesapHareket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MusteriAra.resx">
       <DependentUpon>MusteriAra.cs</DependentUpon>
@@ -177,6 +193,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SifreDegistirme.resx">
+      <DependentUpon>SifreDegistirme.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Yetkiliislem.resx">
       <DependentUpon>Yetkiliislem.cs</DependentUpon>
     </EmbeddedResource>

@@ -51,6 +51,8 @@ namespace banka3
                         con.Close();
                         MessageBox.Show("Havale İşlemi Gerçekleştirildi ", "Havale / EFT işlemi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Form1.mBakiye -= sayi;
+                        Hareketkaydet.kaydet(Form1.mID, (sayi + " TL Havale Gönderildi"));
+                        Hareketkaydet.kaydet(int.Parse(txtNo.Text) , (sayi + " TL Hesabınıza Para geldi"));
                     }
                     else
                     {

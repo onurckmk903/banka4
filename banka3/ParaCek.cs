@@ -40,6 +40,7 @@ namespace banka3
                 {
                     MessageBox.Show("Para Çekme İşlemi Yapıldı ", "Para Çekme  İşlemi", MessageBoxButtons.OK);
                     Form1.mBakiye -= sayi;
+                    Hareketkaydet.kaydet(Form1.mID,(sayi + " TL Para Çekildi"));
                 }
 
                 else

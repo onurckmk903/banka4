@@ -20,6 +20,7 @@ namespace banka3
         private void Bakiye_Load(object sender, EventArgs e)
         {
             lblBakiye.Text=Form1.mBakiye.ToString() + "TL";
+            Hareketkaydet.kaydet(Form1.mID,  " Bakiye Sorgulandı");
         }
     }
 }

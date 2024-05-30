@@ -52,9 +52,10 @@ namespace banka3
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("delete musteriler where ID= @p1 or tcNo=@p2", con);
-            komut.Parameters.AddWithValue("@p1", txtAra.Text);
+            SqlCommand komut = new SqlCommand("update musteriler set durum = @p1 where ID= @p2 or tcNo=@p3", con);
+            komut.Parameters.AddWithValue("@p1", 0 );
             komut.Parameters.AddWithValue("@p2", txtAra.Text);
+            komut.Parameters.AddWithValue("@p3", txtAra.Text);
            
 
             

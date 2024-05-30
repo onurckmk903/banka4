@@ -34,6 +34,7 @@ namespace banka3
                 txtAdres.Text = dr["adres"].ToString();
                 txtTel.Text = dr["telefon"].ToString();
                 txtBakiye.Text = dr["bakiye"].ToString();
+                txtDurum.Text = dr["durum"].ToString();
             }
 
             else
@@ -52,12 +53,13 @@ namespace banka3
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("update musteriler set adSoyad=@p1 , adres=@p2 , telefon=@p3  where ID= @p4 or tcNo=@p5", con);
+            SqlCommand komut = new SqlCommand("update musteriler set adSoyad=@p1 , adres=@p2 , telefon=@p3 , durum=@p6  where ID= @p4 or tcNo=@p5", con);
             komut.Parameters.AddWithValue("@p4", txtAra.Text);
             komut.Parameters.AddWithValue("@p5", txtAra.Text);
             komut.Parameters.AddWithValue("@p1", txtAdSoyad.Text);
             komut.Parameters.AddWithValue("@p2", txtAdres.Text);
             komut.Parameters.AddWithValue("@p3", txtTel.Text);
+            komut.Parameters.AddWithValue("@p6", Convert.ToByte( txtDurum.Text));
 
             con.Open();
             int sonuc= komut.ExecuteNonQuery();

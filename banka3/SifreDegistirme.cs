@@ -57,5 +57,10 @@ namespace banka3
                 txtYeni.Text = "";
             }
         }
+
+        private void SifreDegistirme_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

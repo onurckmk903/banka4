@@ -43,7 +43,7 @@ namespace banka3
             else
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select * from musteriler where tcNo = @p1 and sifre = @p2", con);
+                SqlCommand cmd = new SqlCommand("select * from musteriler where tcNo = @p1 and sifre = @p2 and durum = 1", con);
                 cmd.Parameters.AddWithValue("p1",kAdi);
                 cmd.Parameters.AddWithValue("p2", parola);
                 
@@ -64,7 +64,7 @@ namespace banka3
                 }
                 else
                 {
-                    MessageBox.Show("Hatalı kullanıcı adı/tc veya parola !","hatalı giriş denemesi");
+                    MessageBox.Show("Hatalı kullanıcı adı/tc , parola veya hesabınız bloke edilmiştir !","hatalı giriş denemesi");
                 }
 
 
@@ -75,6 +75,12 @@ namespace banka3
             
             
          
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            SifreUret su = new SifreUret();
+            su.Show();
         }
     }
 }
